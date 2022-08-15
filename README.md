@@ -3,3 +3,17 @@
 Information Retrieval in Software Engineering, FIRE '22
 
 Relevance of a given comment to code snippet
+
+## Prerequisites
+- transformers
+- datasets
+- scikit-learn
+- numpy
+- pandas
+
+## Notebooks
+
+- data_exploration.ipynb: EDA on the data
+- prepare_data.ipynb: Preparing de-duplicated data files to be used for training
+- train_[bert|roberta|codebert].ipynb - Training & evaluation the task using HuggingFace's Trainer API. Changing the MODEL_KEY and EXP_NAME to apropriate values is sufficient to perform different experiments
+- prepare_output.ipynb - Preparing the primary results output file
